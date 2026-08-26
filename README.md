@@ -47,3 +47,47 @@ pip install -r requirements.txt
 
 # 3. 运行
 python comtest60.py
+
+📦 依赖安装
+bash
+pip install PyQt5 PyQtChart pyserial pymodbus python-can paho-mqtt asyncua
+🔧 打包为 exe
+bash
+pyinstaller -F -w --name="工业串口监控系统v6.0" comtest60.py
+📁 项目结构
+text
+Industrial-Serial-Monitor/
+├── comtest60.py              # 主程序
+├── requirements.txt          # 依赖清单
+├── README.md                 # 项目说明
+├── screenshot.png            # 界面截图
+└── dist/
+    └── 工业串口监控系统v6.0.exe   # 打包后的 exe
+🎯 适用场景
+场景	说明
+PLC 调试	Modbus RTU/TCP 读写寄存器
+传感器数据采集	串口/Modbus 读取温度、压力、流量
+车载 CAN 诊断	CAN + CANopen 协议分析
+物联网网关	串口/CAN → MQTT 数据上云
+产线集中监控	多设备轮询 + 触发词报警
+自动化测试	Python 脚本控制设备批量测试
+🛠️ 技术栈
+技术	用途
+Python 3.12	开发语言
+PyQt5	GUI 框架
+PyQtChart	实时曲线
+pyserial	串口通信
+pymodbus	Modbus 协议
+python-can	CAN 总线
+paho-mqtt	MQTT 协议
+asyncua	OPC UA 客户端
+📜 许可证
+MIT License
+
+🤝 贡献
+欢迎提交 Issue 和 Pull Request！
+
+📧 联系方式
+GitHub: cn-lidong
+
+邮箱: 137171666@qq.com
